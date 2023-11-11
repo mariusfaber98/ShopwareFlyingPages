@@ -1,0 +1,18 @@
+{
+  "name": "mariusfaber/flyingpages",
+  "description": "Flying Pages preload pages before the user click on it, making them load instantly",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "FlyingPages\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "FlyingPages\\FlyingPages",
+    "label": {
+      "de-DE": "Flying Pages",
+      "en-GB": "Flying Pages"
+    }
+  }
+}

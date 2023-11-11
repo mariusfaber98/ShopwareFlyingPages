@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Configuration</title>
+        <input-field type="text">
+            <name>delay</name>
+            <label>Delay</label>
+            <defaultValue>0</defaultValue>
+            <helpText>Start prefetching after a delay (in seconds). Will be started when the browser becomes idle, using</helpText>
+        </input-field>
+        <input-field type="text">
+            <name>ignoreKeywords</name>
+            <label>Ignore Keywords</label>
+            <defaultValue>['/checkout/cart', '/account/logout']</defaultValue>
+            <helpText>An array of keywords to ignore from prefetching.</helpText>
+        </input-field>
+        <input-field type="text">
+            <name>maxRPS</name>
+            <label>Maximum requests per second</label>
+            <defaultValue>3</defaultValue>
+            <helpText>Maximum requests per second the queue should process. Set to 0 to process all requests immediately (without queue).
+                Be carefully, only set it to 0 if your server can handle massive load.
+            </helpText>
+        </input-field>
+        <input-field type="text">
+            <name>hoverDelay</name>
+            <label>Hover Delay</label>
+            <defaultValue>50</defaultValue>
+            <helpText>Delay in prefetching links on mouse hover (in milliseconds).</helpText>
+        </input-field>
+    </card>
+</config>

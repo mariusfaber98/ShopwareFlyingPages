@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/layout/meta.html.twig' %}
+
+{% block layout_head_javascript_feature %}
+    {{ parent() }}
+    <script>
+        window.FPConfig = {
+            delay: {{ config('FlyingPages.config.delay') }},
+            ignoreKeywords: {{ config('FlyingPages.config.ignoreKeywords')|raw }},
+            maxRPS: {{ config('FlyingPages.config.maxRPS') }},
+            hoverDelay: {{ config('FlyingPages.config.hoverDelay') }},
+        };
+    </script>
+{% endblock %}
